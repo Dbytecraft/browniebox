@@ -6,69 +6,12 @@
 <title>Brownie Box | Fresh Homemade Brownies</title>
 
 <style>
-/* PRODUCT GRID */
-.products {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 25px;
-    margin-top: 25px;
+/* BASIC */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff8e6;
 }
-
-/* PRODUCT CARD */
-.product {
-    background: white;
-    border-radius: 14px;
-    overflow: hidden;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
-    text-align: center;
-    position: relative;
-}
-
-/* PRODUCT IMAGE */
-.product img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-}
-
-/* PRICE BADGE */
-.price {
-    position: absolute;
-    top: 12px;
-    right: 12px;
-    background: #4b2e23;
-    color: #ffe38a;
-    padding: 6px 12px;
-    border-radius: 20px;
-    font-weight: bold;
-    font-size: 0.95rem;
-}
-
-/* PRODUCT TEXT */
-.product h3 {
-    margin: 12px 0 5px;
-    color: #4b2e23;
-}
-
-.product p {
-    margin: 0 0 12px;
-}
-
-/* ORDER BUTTON */
-.product a {
-    display: block;
-    background: #4b2e23;
-    color: #ffe38a;
-    padding: 10px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.product a:hover {
-    background: #6b3f2f;
-    color: white;
-}
-
 
 /* LOGO */
 .logo {
@@ -130,108 +73,59 @@ h2 {
     padding-left: 10px;
 }
 
-/* MENU */
-<h2 id="menu">🍫 Brownies (300g / 4 pcs)</h2>
-
-<div class="products">
-
-    <div class="product">
-        <span class="price">₹280</span>
-        <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c" alt="Classic Brownie">
-        <h3>Classic</h3>
-        <a href="https://wa.me/919842701002?text=I%20want%20to%20order%20Classic%20Brownie">Order Now</a>
-    </div>
-
-    <div class="product">
-        <span class="price">₹320</span>
-        <img src="https://images.unsplash.com/photo-1599785209798-7c0f6a6fba2c" alt="Nutty Brownie">
-        <h3>Nutty</h3>
-        <a href="https://wa.me/919842701002?text=I%20want%20to%20order%20Nutty%20Brownie">Order Now</a>
-    </div>
-
-    <div class="product">
-        <span class="price">₹360</span>
-        <img src="https://images.unsplash.com/photo-1621939514649-280e2ee25f60" alt="Chocolate Overloaded Brownie">
-        <h3>Chocolate Overloaded</h3>
-        <a href="https://wa.me/919842701002?text=I%20want%20to%20order%20Chocolate%20Overloaded%20Brownie">Order Now</a>
-    </div>
-
-    <div class="product">
-        <span class="price">₹380</span>
-        <img src="https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7" alt="Red Velvet Brownie">
-        <h3>Red Velvet</h3>
-        <a href="https://wa.me/919842701002?text=I%20want%20to%20order%20Red%20Velvet%20Brownie">Order Now</a>
-    </div>
-
-    <div class="product">
-        <span class="price">₹400</span>
-        <img src="https://images.unsplash.com/photo-1589307004394-857d1b1b7c89" alt="Double Chocolate Brownie">
-        <h3>Double Chocolate Brownie</h3>
-        <a href="https://wa.me/919842701002?text=I%20want%20to%20order%20Double%20Chocolate%20Brownie">Order Now</a>
-    </div>
-
-</div>
-
-<h2>⭐ Specials</h2>
-
-<div class="products">
-
-    <div class="product">
-        <span class="price">₹450</span>
-        <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c" alt="Assorted Brownie Box">
-        <h3>Assorted Brownie Box</h3>
-        <a href="https://wa.me/919842701002?text=I%20want%20to%20order%20Assorted%20Brownie%20Box">Order Now</a>
-    </div>
-
-    <div class="product">
-        <span class="price">₹450</span>
-        <img src="https://images.unsplash.com/photo-1621939514649-280e2ee25f60" alt="Triple Chocolate Brownie">
-        <h3>Triple Chocolate Brownie</h3>
-        <a href="https://wa.me/919842701002?text=I%20want%20to%20order%20Triple%20Chocolate%20Brownie">Order Now</a>
-    </div>
-
-</div>
-
-<p style="margin-top:25px; font-weight:bold;">
-🥚 Eggless option available for an additional ₹80
-</p>
-
-
-
-/* PRODUCT IMAGES */
+/* PRODUCTS GRID */
 .products {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    margin-top: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 25px;
 }
 
+/* PRODUCT CARD */
 .product {
     background: white;
-    border-radius: 12px;
-    padding: 10px;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
     text-align: center;
-    box-shadow: 0px 4px 10px #e1d5b9;
+    position: relative;
 }
 
 .product img {
     width: 100%;
-    border-radius: 10px;
+    height: 180px;
+    object-fit: cover;
 }
 
-/* BUTTONS */
-.order-btn {
-    display: inline-block;
+/* PRICE BADGE */
+.price {
+    position: absolute;
+    top: 12px;
+    right: 12px;
     background: #4b2e23;
     color: #ffe38a;
-    padding: 14px 22px;
-    border-radius: 8px;
-    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 20px;
     font-weight: bold;
-    margin-top: 20px;
 }
 
-.order-btn:hover {
+/* PRODUCT TEXT */
+.product h3 {
+    margin: 12px 0 5px;
+    color: #4b2e23;
+}
+
+/* ORDER BUTTON */
+.product a {
+    display: block;
+    background: #4b2e23;
+    color: #ffe38a;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.product a:hover {
     background: #6b3f2f;
     color: white;
 }
@@ -272,55 +166,84 @@ footer {
 
 <nav>
     <a href="#menu">Menu</a>
-    <a href="#products">Products</a>
     <a href="#about">About</a>
     <a href="#contact">Contact</a>
 </nav>
 
 <div class="hero">
     Welcome to Brownie Box 🍫
-    <small style="font-size: 1rem; margin-top: 10px;">
+    <small style="font-size:1rem;margin-top:10px;">
         Premium Homemade Brownies • Hosur, Krishnagiri
     </small>
 </div>
 
 <div class="container">
 
-<h2 id="menu">🍰 Menu</h2>
-
-<div class="menu-item">
-    <h3>Classic Fudgy Brownie</h3>
-    <p>Rich, moist, delicious.</p>
-</div>
-
-<div class="menu-item">
-    <h3>Walnut Brownie</h3>
-    <p>Crunchy walnuts with deep chocolate flavour.</p>
-</div>
-
-<div class="menu-item">
-    <h3>Oreo Brownie</h3>
-    <p>Loaded with Oreo pieces.</p>
-</div>
-
-<a href="https://wa.me/919842701002" class="order-btn">Order on WhatsApp</a>
-
-<h2 id="products">📸 Our Brownies</h2>
+<!-- MENU -->
+<h2 id="menu">🍫 Brownies (300g / 4 pcs)</h2>
 
 <div class="products">
+
     <div class="product">
-        <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c" alt="Brownie">
-        <p>Classic Brownie</p>
+        <span class="price">₹280</span>
+        <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c">
+        <h3>Classic</h3>
+        <a href="https://wa.me/919842701002?text=I%20want%20to%20order%20Classic%20Brownie">Order Now</a>
     </div>
+
     <div class="product">
-        <img src="https://images.unsplash.com/photo-1599785209798-7c0f6a6fba2c" alt="Brownie">
-        <p>Walnut Brownie</p>
+        <span class="price">₹320</span>
+        <img src="https://images.unsplash.com/photo-1599785209798-7c0f6a6fba2c">
+        <h3>Nutty</h3>
+        <a href="https://wa.me/919842701002?text=I%20want%20to%20order%20Nutty%20Brownie">Order Now</a>
     </div>
+
     <div class="product">
-        <img src="https://images.unsplash.com/photo-1621939514649-280e2ee25f60" alt="Brownie">
-        <p>Oreo Brownie</p>
+        <span class="price">₹360</span>
+        <img src="https://images.unsplash.com/photo-1621939514649-280e2ee25f60">
+        <h3>Chocolate Overloaded</h3>
+        <a href="https://wa.me/919842701002?text=I%20want%20to%20order%20Chocolate%20Overloaded%20Brownie">Order Now</a>
     </div>
+
+    <div class="product">
+        <span class="price">₹380</span>
+        <img src="https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7">
+        <h3>Red Velvet</h3>
+        <a href="https://wa.me/919842701002?text=I%20want%20to%20order%20Red%20Velvet%20Brownie">Order Now</a>
+    </div>
+
+    <div class="product">
+        <span class="price">₹400</span>
+        <img src="https://images.unsplash.com/photo-1589307004394-857d1b1b7c89">
+        <h3>Double Chocolate Brownie</h3>
+        <a href="https://wa.me/919842701002?text=I%20want%20to%20order%20Double%20Chocolate%20Brownie">Order Now</a>
+    </div>
+
 </div>
+
+<h2>⭐ Specials</h2>
+
+<div class="products">
+
+    <div class="product">
+        <span class="price">₹450</span>
+        <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c">
+        <h3>Assorted Brownie Box</h3>
+        <a href="https://wa.me/919842701002?text=I%20want%20to%20order%20Assorted%20Brownie%20Box">Order Now</a>
+    </div>
+
+    <div class="product">
+        <span class="price">₹450</span>
+        <img src="https://images.unsplash.com/photo-1621939514649-280e2ee25f60">
+        <h3>Triple Chocolate Brownie</h3>
+        <a href="https://wa.me/919842701002?text=I%20want%20to%20order%20Triple%20Chocolate%20Brownie">Order Now</a>
+    </div>
+
+</div>
+
+<p style="margin-top:25px;font-weight:bold;">
+🥚 Eggless option available for an additional ₹80
+</p>
 
 <h2 id="about">👩‍🍳 About</h2>
 <p>
@@ -330,9 +253,7 @@ offering freshly baked homemade brownies made with love.
 
 <h2 id="contact">📞 Contact</h2>
 <p><strong>Phone:</strong> 9842701002</p>
-<p><strong>Instagram:</strong>
-<a href="https://instagram.com" target="_blank">Visit Instagram</a>
-</p>
+<p><strong>Instagram:</strong> Coming soon</p>
 
 </div>
 
@@ -340,7 +261,6 @@ offering freshly baked homemade brownies made with love.
 © 2025 Brownie Box — Made with Love in Hosur 🍫
 </footer>
 
-<!-- FLOATING WHATSAPP -->
 <a href="https://wa.me/919842701002" class="whatsapp-float">WhatsApp</a>
 
 </body>
