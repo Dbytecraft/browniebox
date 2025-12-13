@@ -6,11 +6,69 @@
 <title>Brownie Box | Fresh Homemade Brownies</title>
 
 <style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #fff8e6;
+/* PRODUCT GRID */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 25px;
 }
+
+/* PRODUCT CARD */
+.product {
+    background: white;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    text-align: center;
+    position: relative;
+}
+
+/* PRODUCT IMAGE */
+.product img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* PRICE BADGE */
+.price {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: #4b2e23;
+    color: #ffe38a;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.95rem;
+}
+
+/* PRODUCT TEXT */
+.product h3 {
+    margin: 12px 0 5px;
+    color: #4b2e23;
+}
+
+.product p {
+    margin: 0 0 12px;
+}
+
+/* ORDER BUTTON */
+.product a {
+    display: block;
+    background: #4b2e23;
+    color: #ffe38a;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.product a:hover {
+    background: #6b3f2f;
+    color: white;
+}
+
 
 /* LOGO */
 .logo {
@@ -73,14 +131,71 @@ h2 {
 }
 
 /* MENU */
-.menu-item {
-    background: white;
-    padding: 18px;
-    margin: 15px 0;
-    border-radius: 10px;
-    border-left: 5px solid #f4c254;
-    box-shadow: 0px 0px 8px #e1d5b9;
-}
+<h2 id="menu">🍫 Brownies (300g / 4 pcs)</h2>
+
+<div class="products">
+
+    <div class="product">
+        <span class="price">₹280</span>
+        <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c" alt="Classic Brownie">
+        <h3>Classic</h3>
+        <a href="https://wa.me/919842701002?text=I%20want%20to%20order%20Classic%20Brownie">Order Now</a>
+    </div>
+
+    <div class="product">
+        <span class="price">₹320</span>
+        <img src="https://images.unsplash.com/photo-1599785209798-7c0f6a6fba2c" alt="Nutty Brownie">
+        <h3>Nutty</h3>
+        <a href="https://wa.me/919842701002?text=I%20want%20to%20order%20Nutty%20Brownie">Order Now</a>
+    </div>
+
+    <div class="product">
+        <span class="price">₹360</span>
+        <img src="https://images.unsplash.com/photo-1621939514649-280e2ee25f60" alt="Chocolate Overloaded">
+        <h3>Chocolate Overloaded</h3>
+        <a href="https://wa.me/919842701002?text=I%20want%20to%20order%20Chocolate%20Overloaded%20Brownie">Order Now</a>
+    </div>
+
+    <div class="product">
+        <span class="price">₹380</span>
+        <img src="https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7" alt="Red Velvet Brownie">
+        <h3>Red Velvet</h3>
+        <a href="https://wa.me/919842701002?text=I%20want%20to%20order%20Red%20Velvet%20Brownie">Order Now</a>
+    </div>
+
+    <div class="product">
+        <span class="price">₹400</span>
+        <img src="https://images.unsplash.com/photo-1589307004394-857d1b1b7c89" alt="Double Chocolate Brownie">
+        <h3>Double Chocolate Brownie</h3>
+        <a href="https://wa.me/919842701002?text=I%20want%20to%20order%20Double%20Chocolate%20Brownie">Order Now</a>
+    </div>
+
+</div>
+
+<h2>⭐ Specials</h2>
+
+<div class="products">
+
+    <div class="product">
+        <span class="price">₹450</span>
+        <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c" alt="Assorted Brownie Box">
+        <h3>Assorted Brownie Box</h3>
+        <a href="https://wa.me/919842701002?text=I%20want%20to%20order%20Assorted%20Brownie%20Box">Order Now</a>
+    </div>
+
+    <div class="product">
+        <span class="price">₹450</span>
+        <img src="https://images.unsplash.com/photo-1621939514649-280e2ee25f60" alt="Triple Chocolate Brownie">
+        <h3>Triple Chocolate Brownie</h3>
+        <a href="https://wa.me/919842701002?text=I%20want%20to%20order%20Triple%20Chocolate%20Brownie">Order Now</a>
+    </div>
+
+</div>
+
+<p style="margin-top:25px; font-weight:bold;">
+🥚 Eggless option available for an additional ₹80
+</p>
+
 
 /* PRODUCT IMAGES */
 .products {
