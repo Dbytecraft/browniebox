@@ -3,92 +3,104 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Brownie Box | Fresh Homemade Brownies</title>
+<title>Brownie Box | Premium Homemade Brownies</title>
 
 <style>
-/* BASIC */
+/* BASE */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #fff8e6;
-}
-
-/* LOGO */
-.logo {
-    width: 130px;
-    height: auto;
-    display: block;
-    margin: 0 auto 12px;
-    filter: drop-shadow(0px 4px 6px rgba(0,0,0,0.3));
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #faf7f2; /* Theobroma cream */
+    color: #3e2723;
 }
 
 /* HEADER */
 header {
-    background-color: #4b2e23;
-    color: #fddc5c;
+    background-color: #ffffff;
     padding: 30px 20px;
     text-align: center;
+    border-bottom: 1px solid #eee;
 }
 
+.logo {
+    width: 120px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+header h1 {
+    margin: 5px 0;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+header p {
+    margin: 0;
+    color: #7a5c52;
+}
+
+/* NAV */
 nav {
-    background-color: #6b3f2f;
-    padding: 12px;
+    background-color: #ffffff;
     text-align: center;
+    padding: 12px;
+    border-bottom: 1px solid #eee;
 }
 
 nav a {
-    color: #ffe38a;
+    color: #3e2723;
     margin: 0 15px;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 nav a:hover {
-    color: white;
+    text-decoration: underline;
 }
 
 /* HERO */
 .hero {
-    background-color: #4b2e23;
-    height: 240px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: #ffe38a;
-    font-size: 2rem;
-    font-weight: bold;
+    padding: 60px 20px;
     text-align: center;
-    padding: 20px;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.hero p {
+    color: #6d4c41;
 }
 
 /* CONTAINER */
 .container {
-    padding: 40px;
+    padding: 40px 8%;
 }
 
-h2 {
-    color: #4b2e23;
-    border-left: 6px solid #f8c743;
+/* SECTION TITLE */
+h2.section-title {
+    font-weight: 600;
+    border-left: 4px solid #d8c8a8;
     padding-left: 10px;
+    margin-top: 60px;
 }
 
-/* PRODUCTS GRID */
+/* PRODUCTS */
 .products {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 25px;
-    margin-top: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
 }
 
-/* PRODUCT CARD */
 .product {
-    background: white;
-    border-radius: 14px;
+    background: #ffffff;
+    border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
     text-align: center;
     position: relative;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
 }
 
 .product img {
@@ -97,40 +109,46 @@ h2 {
     object-fit: cover;
 }
 
-/* PRICE BADGE */
+.product h3 {
+    margin: 15px 0 5px;
+    font-weight: 600;
+}
+
 .price {
     position: absolute;
     top: 12px;
     right: 12px;
-    background: #4b2e23;
-    color: #ffe38a;
+    background: #d8c8a8;
+    color: #3e2723;
     padding: 6px 12px;
-    border-radius: 20px;
-    font-weight: bold;
+    border-radius: 16px;
+    font-weight: 600;
 }
 
-/* PRODUCT TEXT */
-.product h3 {
-    margin: 12px 0 5px;
-    color: #4b2e23;
-}
-
-/* ORDER BUTTON */
 .product a {
     display: block;
-    background: #4b2e23;
-    color: #ffe38a;
-    padding: 10px;
+    background: #3e2723;
+    color: #ffffff;
+    padding: 12px;
     text-decoration: none;
-    font-weight: bold;
+    margin-top: 10px;
 }
 
 .product a:hover {
-    background: #6b3f2f;
-    color: white;
+    background: #5d4037;
 }
 
-/* FLOATING WHATSAPP */
+/* FOOTER */
+footer {
+    background: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+    border-top: 1px solid #eee;
+    color: #6d4c41;
+}
+
+/* WHATSAPP FLOAT */
 .whatsapp-float {
     position: fixed;
     bottom: 20px;
@@ -141,17 +159,7 @@ h2 {
     border-radius: 50px;
     text-decoration: none;
     font-weight: bold;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
-    z-index: 1000;
-}
-
-/* FOOTER */
-footer {
-    margin-top: 40px;
-    background: #4b2e23;
-    color: #ffe38a;
-    text-align: center;
-    padding: 18px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
 }
 </style>
 </head>
@@ -159,7 +167,7 @@ footer {
 <body>
 
 <header>
-    <img src="logo.png" alt="Brownie Box Logo" class="logo">
+    <img src="logo.png" class="logo">
     <h1>BROWNIE BOX</h1>
     <p>Fresh • Fudgy • Homemade Brownies</p>
 </header>
@@ -171,94 +179,90 @@ footer {
 </nav>
 
 <div class="hero">
-    Welcome to Brownie Box 🍫
-    <small style="font-size:1rem;margin-top:10px;">
-        Premium Homemade Brownies • Hosur, Krishnagiri
-    </small>
+    <h2>Premium Brownies, Baked Fresh</h2>
+    <p>Inspired by premium bakeries • Made in Hosur</p>
 </div>
 
 <div class="container">
 
-<!-- MENU -->
-<h2 id="menu">🍫 Brownies (300g / 4 pcs)</h2>
+<h2 id="menu" class="section-title">Brownies (300g / 4 pcs)</h2>
 
 <div class="products">
 
-    <div class="product">
-        <span class="price">₹280</span>
-        <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c">
-        <h3>Classic</h3>
-        <a href="https://wa.me/919842701002?text=I%20want%20to%20order%20Classic%20Brownie">Order Now</a>
-    </div>
+<div class="product">
+<span class="price">₹280</span>
+<img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c">
+<h3>Classic Chocolate Brownie</h3>
+<a href="https://wa.me/919842701002?text=I%20want%20to%20order%20Classic%20Brownie">Order Now</a>
+</div>
 
-    <div class="product">
-        <span class="price">₹320</span>
-        <img src="https://images.unsplash.com/photo-1599785209798-7c0f6a6fba2c">
-        <h3>Nutty</h3>
-        <a href="https://wa.me/919842701002?text=I%20want%20to%20order%20Nutty%20Brownie">Order Now</a>
-    </div>
+<div class="product">
+<span class="price">₹320</span>
+<img src="https://images.unsplash.com/photo-1599785209798-7c0f6a6fba2c">
+<h3>Walnut Brownie</h3>
+<a href="https://wa.me/919842701002?text=I%20want%20to%20order%20Walnut%20Brownie">Order Now</a>
+</div>
 
-    <div class="product">
-        <span class="price">₹360</span>
-        <img src="https://images.unsplash.com/photo-1621939514649-280e2ee25f60">
-        <h3>Chocolate Overloaded</h3>
-        <a href="https://wa.me/919842701002?text=I%20want%20to%20order%20Chocolate%20Overloaded%20Brownie">Order Now</a>
-    </div>
+<div class="product">
+<span class="price">₹360</span>
+<img src="https://images.unsplash.com/photo-1621939514649-280e2ee25f60">
+<h3>Dark Chocolate Overload</h3>
+<a href="https://wa.me/919842701002?text=I%20want%20to%20order%20Chocolate%20Overload">Order Now</a>
+</div>
 
-    <div class="product">
-        <span class="price">₹380</span>
-        <img src="https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7">
-        <h3>Red Velvet</h3>
-        <a href="https://wa.me/919842701002?text=I%20want%20to%20order%20Red%20Velvet%20Brownie">Order Now</a>
-    </div>
+<div class="product">
+<span class="price">₹380</span>
+<img src="https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7">
+<h3>Red Velvet Brownie</h3>
+<a href="https://wa.me/919842701002?text=I%20want%20to%20order%20Red%20Velvet%20Brownie">Order Now</a>
+</div>
 
-    <div class="product">
-        <span class="price">₹400</span>
-        <img src="https://images.unsplash.com/photo-1589307004394-857d1b1b7c89">
-        <h3>Double Chocolate Brownie</h3>
-        <a href="https://wa.me/919842701002?text=I%20want%20to%20order%20Double%20Chocolate%20Brownie">Order Now</a>
-    </div>
+<div class="product">
+<span class="price">₹400</span>
+<img src="https://images.unsplash.com/photo-1589307004394-857d1b1b7c89">
+<h3>Double Chocolate Fudge</h3>
+<a href="https://wa.me/919842701002?text=I%20want%20to%20order%20Double%20Chocolate%20Brownie">Order Now</a>
+</div>
 
 </div>
 
-<h2>⭐ Specials</h2>
+<h2 class="section-title">Specials</h2>
 
 <div class="products">
 
-    <div class="product">
-        <span class="price">₹450</span>
-        <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c">
-        <h3>Assorted Brownie Box</h3>
-        <a href="https://wa.me/919842701002?text=I%20want%20to%20order%20Assorted%20Brownie%20Box">Order Now</a>
-    </div>
+<div class="product">
+<span class="price">₹450</span>
+<img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c">
+<h3>Assorted Brownie Box</h3>
+<a href="https://wa.me/919842701002?text=I%20want%20to%20order%20Assorted%20Brownie%20Box">Order Now</a>
+</div>
 
-    <div class="product">
-        <span class="price">₹450</span>
-        <img src="https://images.unsplash.com/photo-1621939514649-280e2ee25f60">
-        <h3>Triple Chocolate Brownie</h3>
-        <a href="https://wa.me/919842701002?text=I%20want%20to%20order%20Triple%20Chocolate%20Brownie">Order Now</a>
-    </div>
+<div class="product">
+<span class="price">₹450</span>
+<img src="https://images.unsplash.com/photo-1621939514649-280e2ee25f60">
+<h3>Triple Chocolate Brownie</h3>
+<a href="https://wa.me/919842701002?text=I%20want%20to%20order%20Triple%20Chocolate%20Brownie">Order Now</a>
+</div>
 
 </div>
 
-<p style="margin-top:25px;font-weight:bold;">
-🥚 Eggless option available for an additional ₹80
+<p style="margin-top:30px;font-weight:600;">
+🥚 Eggless option available (+₹80)
 </p>
 
-<h2 id="about">👩‍🍳 About</h2>
+<h2 id="about" class="section-title">About</h2>
 <p>
-Brownie Box is based in <strong>Hosur, Krishnagiri, Tamil Nadu</strong>,
-offering freshly baked homemade brownies made with love.
+Brownie Box is a homegrown brownie brand from Hosur, inspired by premium bakeries like Theobroma, delivering fresh brownies at honest prices.
 </p>
 
-<h2 id="contact">📞 Contact</h2>
+<h2 id="contact" class="section-title">Contact</h2>
 <p><strong>Phone:</strong> 9842701002</p>
 <p><strong>Instagram:</strong> Coming soon</p>
 
 </div>
 
 <footer>
-© 2025 Brownie Box — Made with Love in Hosur 🍫
+© 2025 Brownie Box — Made with Love in Hosur
 </footer>
 
 <a href="https://wa.me/919842701002" class="whatsapp-float">WhatsApp</a>
