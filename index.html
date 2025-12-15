@@ -6,41 +6,45 @@
 <title>Brownie Box | Premium Homemade Brownies</title>
 
 <style>
-/* BASE */
+/* BASE + WATERMARK BACKGROUND */
 body {
     margin: 0;
     font-family: 'Segoe UI', Arial, sans-serif;
-    background-color: #f7f4ef;
-    background-image: 
-        linear-gradient(rgba(247,244,239,0.95), rgba(247,244,239,0.95)),
-        url("https://images.unsplash.com/photo-1606313564200-e75d5e30476c");
-    background-size: cover;
+    background-color: #f7f2ec;
+    background-image:
+        linear-gradient(rgba(247,242,236,0.96), rgba(247,242,236,0.96)),
+        url("logo.png");
+    background-repeat: no-repeat;
+    background-position: center 140px;
+    background-size: 420px;
     background-attachment: fixed;
     color: #3e2723;
 }
 
 /* HEADER */
 header {
-    background: rgba(255,255,255,0.95);
-    padding: 35px 20px;
+    background: rgba(255,255,255,0.97);
+    padding: 55px 20px;
     text-align: center;
-    border-bottom: 1px solid #e6e0d8;
+    border-bottom: 1px solid #e6d8c6;
 }
 
-.logo {
-    width: 120px;
-    margin-bottom: 10px;
+/* BIG PREMIUM LOGO */
+.logo-large {
+    width: 240px;
+    max-width: 85%;
+    height: auto;
+    display: block;
+    margin: 0 auto 18px;
+    filter: drop-shadow(0px 6px 10px rgba(0,0,0,0.25));
 }
 
-header h1 {
-    margin: 5px 0;
-    letter-spacing: 3px;
-    font-weight: 600;
-}
-
-header p {
-    margin: 0;
+/* TAGLINE */
+.tagline {
+    font-size: 0.95rem;
+    letter-spacing: 2px;
     color: #7a5c52;
+    margin: 0;
 }
 
 /* NAV */
@@ -48,7 +52,7 @@ nav {
     background: rgba(255,255,255,0.95);
     text-align: center;
     padding: 12px;
-    border-bottom: 1px solid #e6e0d8;
+    border-bottom: 1px solid #e6d8c6;
 }
 
 nav a {
@@ -66,7 +70,6 @@ nav a:hover {
 .hero {
     padding: 80px 20px;
     text-align: center;
-    background: rgba(255,255,255,0.75);
 }
 
 .hero h2 {
@@ -76,13 +79,12 @@ nav a:hover {
 
 .hero p {
     color: #5d4037;
-    margin-top: 10px;
 }
 
 /* CONTAINER */
 .container {
     padding: 50px 8%;
-    background: rgba(247,244,239,0.95);
+    background: rgba(247,242,236,0.97);
 }
 
 /* SECTION TITLES */
@@ -93,7 +95,7 @@ nav a:hover {
     margin-top: 60px;
 }
 
-/* PRODUCTS */
+/* PRODUCTS GRID */
 .products {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -101,6 +103,7 @@ nav a:hover {
     margin-top: 35px;
 }
 
+/* PRODUCT CARD */
 .product {
     background: #ffffff;
     border-radius: 14px;
@@ -116,11 +119,7 @@ nav a:hover {
     object-fit: cover;
 }
 
-.product h3 {
-    margin: 18px 0 5px;
-    font-weight: 600;
-}
-
+/* PRICE BADGE */
 .price {
     position: absolute;
     top: 14px;
@@ -132,6 +131,13 @@ nav a:hover {
     font-weight: 600;
 }
 
+/* PRODUCT TEXT */
+.product h3 {
+    margin: 18px 0 5px;
+    font-weight: 600;
+}
+
+/* ORDER BUTTON */
 .product a {
     display: block;
     background: #3e2723;
@@ -147,11 +153,11 @@ nav a:hover {
 
 /* FOOTER */
 footer {
-    background: rgba(255,255,255,0.95);
+    background: rgba(255,255,255,0.97);
     text-align: center;
     padding: 22px;
     margin-top: 70px;
-    border-top: 1px solid #e6e0d8;
+    border-top: 1px solid #e6d8c6;
     color: #6d4c41;
 }
 
@@ -174,9 +180,8 @@ footer {
 <body>
 
 <header>
-    <img src="logo.png" class="logo" alt="Brownie Box">
-    <h1>BROWNIE BOX</h1>
-    <p>Premium • Fresh • Homemade</p>
+    <img src="logo.png" alt="Brownie Box Logo" class="logo-large">
+    <p class="tagline">PREMIUM • FRESH • HOMEMADE BROWNIES</p>
 </header>
 
 <nav>
@@ -187,7 +192,7 @@ footer {
 
 <div class="hero">
     <h2>Indulgence, Perfected</h2>
-    <p>Luxury brownies baked fresh with care</p>
+    <p>Luxury brownies crafted with care</p>
 </div>
 
 <div class="container">
@@ -260,7 +265,7 @@ footer {
 <h2 id="about" class="section-title">About</h2>
 <p>
 Brownie Box offers premium, handcrafted brownies made in small batches,
-focusing on quality ingredients, rich flavours, and a luxury dessert experience.
+focused on quality ingredients, rich flavours, and a luxury dessert experience.
 </p>
 
 <h2 id="contact" class="section-title">Contact</h2>
