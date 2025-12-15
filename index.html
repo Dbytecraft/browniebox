@@ -6,111 +6,111 @@
 <title>Brownie Box | Premium Homemade Brownies</title>
 
 <style>
-/* ===== BASE ===== */
+/* RESET */
+* {
+    box-sizing: border-box;
+}
+
+/* BASE */
 body {
     margin: 0;
-    font-family: "Segoe UI", Arial, sans-serif;
+    font-family: 'Segoe UI', Arial, sans-serif;
     background-color: #f7f2ec;
     color: #3e2723;
 }
 
-/* ===== HEADER ===== */
+/* HEADER */
 header {
     background: #ffffff;
+    padding: 60px 20px 40px;
     text-align: center;
-    padding: 60px 20px 45px;
     border-bottom: 1px solid #e6d8c6;
 }
 
 /* BIG LOGO */
 .logo-large {
-    width: 300px;              /* BIG */
+    width: 280px;       /* BIG & CLEAR */
     max-width: 90%;
     height: auto;
     display: block;
-    margin: 0 auto 15px;
+    margin: 0 auto 20px;
 }
 
 .tagline {
-    letter-spacing: 2px;
     font-size: 0.95rem;
+    letter-spacing: 2px;
     color: #7a5c52;
-    margin: 0;
 }
 
-/* ===== NAV ===== */
+/* NAV */
 nav {
     background: #ffffff;
-    padding: 14px;
     text-align: center;
+    padding: 14px;
     border-bottom: 1px solid #e6d8c6;
 }
 
 nav a {
+    color: #3e2723;
     margin: 0 18px;
     text-decoration: none;
     font-weight: 500;
-    color: #3e2723;
 }
 
 nav a:hover {
     text-decoration: underline;
 }
 
-/* ===== HERO ===== */
+/* HERO */
 .hero {
-    text-align: center;
     padding: 70px 20px;
+    text-align: center;
 }
 
 .hero h2 {
     font-size: 2.2rem;
-    margin-bottom: 10px;
+    font-weight: 600;
 }
 
 .hero p {
     color: #5d4037;
 }
 
-/* ===== CONTAINER ===== */
+/* CONTAINER */
 .container {
     padding: 50px 8%;
 }
 
-/* ===== SECTION TITLE ===== */
+/* SECTION TITLES */
 .section-title {
+    font-weight: 600;
     border-left: 4px solid #c6a96b;
     padding-left: 12px;
-    margin-top: 60px;
-    font-weight: 600;
+    margin: 60px 0 20px;
 }
 
-/* ===== PRODUCTS GRID ===== */
+/* PRODUCTS GRID */
 .products {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 35px;
-    margin-top: 35px;
+    gap: 30px;
 }
 
-/* ===== PRODUCT CARD ===== */
+/* PRODUCT CARD */
 .product {
     background: #ffffff;
     border-radius: 14px;
     overflow: hidden;
     text-align: center;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
     position: relative;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
 }
 
-/* IMAGE – NO CROPPING */
+/* IMAGE FIX (NO CROPPING) */
 .product img {
     width: 100%;
-    height: auto;              /* NO crop */
-    max-height: 260px;
-    object-fit: contain;       /* FIXED */
-    background: #fff;
-    padding: 10px;
+    height: auto;        /* 🔥 IMPORTANT FIX */
+    display: block;
 }
 
 /* PRICE BADGE */
@@ -127,7 +127,8 @@ nav a:hover {
 
 /* PRODUCT TEXT */
 .product h3 {
-    margin: 15px 0 5px;
+    margin: 16px 0 10px;
+    font-weight: 600;
 }
 
 /* ORDER BUTTON */
@@ -137,14 +138,21 @@ nav a:hover {
     color: #ffffff;
     padding: 14px;
     text-decoration: none;
-    margin-top: 10px;
 }
 
 .product a:hover {
     background: #5d4037;
 }
 
-/* ===== FOOTER ===== */
+/* ABOUT + CONTACT */
+.text-box {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+/* FOOTER */
 footer {
     background: #ffffff;
     text-align: center;
@@ -154,13 +162,13 @@ footer {
     color: #6d4c41;
 }
 
-/* ===== WHATSAPP FLOAT ===== */
+/* WHATSAPP FLOAT */
 .whatsapp-float {
     position: fixed;
     bottom: 20px;
     right: 20px;
     background: #25d366;
-    color: #ffffff;
+    color: white;
     padding: 15px 18px;
     border-radius: 50px;
     text-decoration: none;
@@ -185,85 +193,53 @@ footer {
 
 <div class="hero">
     <h2>Indulgence, Perfected</h2>
-    <p>Handcrafted brownies made with care</p>
+    <p>Luxury brownies crafted with care</p>
 </div>
 
 <div class="container">
 
+<!-- MENU -->
 <h2 id="menu" class="section-title">Brownies (300g / 4 pcs)</h2>
 
 <div class="products">
 
 <div class="product">
 <span class="price">₹280</span>
-<img src="images/classic.jpg" loading="lazy">
+<img src="images/classic.jpg">
 <h3>Classic Chocolate Brownie</h3>
 <a href="https://wa.me/919842701002">Order Now</a>
 </div>
 
 <div class="product">
 <span class="price">₹320</span>
-<img src="images/nutty.jpg" loading="lazy">
+<img src="images/walnut.jpg">
 <h3>Walnut Brownie</h3>
 <a href="https://wa.me/919842701002">Order Now</a>
 </div>
 
 <div class="product">
 <span class="price">₹360</span>
-<img src="images/overload.jpg" loading="lazy">
+<img src="images/overload.jpg">
 <h3>Chocolate Overload</h3>
 <a href="https://wa.me/919842701002">Order Now</a>
 </div>
 
-<div class="product">
-<span class="price">₹380</span>
-<img src="images/redvelvet.jpg" loading="lazy">
-<h3>Red Velvet Brownie</h3>
-<a href="https://wa.me/919842701002">Order Now</a>
 </div>
 
-<div class="product">
-<span class="price">₹400</span>
-<img src="images/doublechoco.jpg" loading="lazy">
-<h3>Double Chocolate Fudge</h3>
-<a href="https://wa.me/919842701002">Order Now</a>
-</div>
-
-</div>
-
-<h2 class="section-title">Specials</h2>
-
-<div class="products">
-
-<div class="product">
-<span class="price">₹450</span>
-<img src="images/assorted.jpg" loading="lazy">
-<h3>Assorted Brownie Box</h3>
-<a href="https://wa.me/919842701002">Order Now</a>
-</div>
-
-<div class="product">
-<span class="price">₹450</span>
-<img src="images/triplechoco.jpg" loading="lazy">
-<h3>Triple Chocolate Brownie</h3>
-<a href="https://wa.me/919842701002">Order Now</a>
-</div>
-
-</div>
-
-<p style="margin-top:30px;font-weight:600;">
-🥚 Eggless option available (+₹80)
-</p>
-
-<h2 id="about" class="section-title">About</h2>
+<h2 class="section-title">About</h2>
+<div id="about" class="text-box">
 <p>
-Brownie Box is a premium homemade brownie brand focused on rich flavours,
-quality ingredients, and beautifully crafted desserts made in small batches.
+Brownie Box offers premium, handcrafted brownies baked in small batches,
+focusing on quality ingredients, rich flavours, and a luxury dessert experience.
 </p>
+</div>
 
-<h2 id="contact" class="section-title">Contact</h2>
+<h2 class="section-title">Contact</h2>
+<div id="contact" class="text-box">
 <p><strong>Phone:</strong> 9842701002</p>
 <p><strong>Location:</strong> Hosur, Tamil Nadu</p>
+<p><strong>Instagram:</strong> Coming soon</p>
+</div>
 
 </div>
 
