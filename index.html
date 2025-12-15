@@ -97,11 +97,12 @@ nav a {
     position: relative;
 }
 
-/* IMAGE FIX */
+/* IMAGE FIT (NO WHITE BORDER, ZOOMED) */
 .product img {
     width: 100%;
     height: 220px;
     object-fit: cover;
+    object-position: center;
     display: block;
 }
 
@@ -137,35 +138,6 @@ nav a {
     background: #5d4037;
 }
 
-/* REVIEWS */
-.reviews {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 25px;
-    margin-top: 30px;
-}
-
-.review {
-    background: #ffffff;
-    padding: 22px;
-    border-radius: 14px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-}
-
-.stars {
-    color: #c6a96b;
-    font-size: 1.1rem;
-}
-
-.review p {
-    margin: 12px 0;
-    font-style: italic;
-}
-
-.review strong {
-    color: #5d4037;
-}
-
 /* FOOTER */
 footer {
     margin-top: 60px;
@@ -175,7 +147,7 @@ footer {
     border-top: 1px solid #e6d8c6;
 }
 
-/* WHATSAPP */
+/* WHATSAPP FLOAT */
 .whatsapp {
     position: fixed;
     bottom: 20px;
@@ -199,7 +171,6 @@ footer {
 
 <nav>
     <a href="#menu">Menu</a>
-    <a href="#reviews">Reviews</a>
     <a href="#about">About</a>
     <a href="#contact">Contact</a>
 </nav>
@@ -217,35 +188,35 @@ footer {
 
 <div class="product">
 <span class="price">₹280</span>
-<img src="images/classic.jpg">
+<img src="images/classic.jpg" alt="Classic Brownie">
 <h3>Classic Chocolate Brownie</h3>
 <a href="https://wa.me/919842701002">Order Now</a>
 </div>
 
 <div class="product">
 <span class="price">₹320</span>
-<img src="images/nutty.jpg">
+<img src="images/nutty.jpg" alt="Nutty Brownie">
 <h3>Nutty Brownie</h3>
 <a href="https://wa.me/919842701002">Order Now</a>
 </div>
 
 <div class="product">
 <span class="price">₹360</span>
-<img src="images/overload.jpg">
+<img src="images/overload.jpg" alt="Chocolate Overload">
 <h3>Chocolate Overload</h3>
 <a href="https://wa.me/919842701002">Order Now</a>
 </div>
 
 <div class="product">
 <span class="price">₹380</span>
-<img src="images/redvelvet.jpg">
+<img src="images/redvelvet.jpg" alt="Red Velvet Brownie">
 <h3>Red Velvet Brownie</h3>
 <a href="https://wa.me/919842701002">Order Now</a>
 </div>
 
 <div class="product">
 <span class="price">₹400</span>
-<img src="images/double.jpg">
+<img src="images/double.jpg" alt="Double Chocolate Fudge">
 <h3>Double Chocolate Fudge</h3>
 <a href="https://wa.me/919842701002">Order Now</a>
 </div>
@@ -258,41 +229,16 @@ footer {
 
 <div class="product">
 <span class="price">₹450</span>
-<img src="images/assorted.jpg">
+<img src="images/assorted.jpg" alt="Assorted Brownie Box">
 <h3>Assorted Brownie Box</h3>
 <a href="https://wa.me/919842701002">Order Now</a>
 </div>
 
 <div class="product">
 <span class="price">₹450</span>
-<img src="images/triple.jpg">
+<img src="images/triple.jpg" alt="Triple Chocolate Brownie">
 <h3>Triple Chocolate Brownie</h3>
 <a href="https://wa.me/919842701002">Order Now</a>
-</div>
-
-</div>
-
-<!-- REVIEWS SECTION -->
-<h2 id="reviews" class="section-title">Customer Reviews</h2>
-
-<div class="reviews">
-
-<div class="review">
-<div class="stars">★★★★★</div>
-<p>“Absolutely fudgy and rich brownies. The classic chocolate is my favourite!”</p>
-<strong>— Priya, Hosur</strong>
-</div>
-
-<div class="review">
-<div class="stars">★★★★★</div>
-<p>“Freshly baked and perfectly packed. Worth every rupee.”</p>
-<strong>— Arjun</strong>
-</div>
-
-<div class="review">
-<div class="stars">★★★★★</div>
-<p>“The assorted brownie box was amazing. Will order again for sure!”</p>
-<strong>— Sneha</strong>
 </div>
 
 </div>
