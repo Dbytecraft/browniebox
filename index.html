@@ -3,56 +3,55 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Brownie Box | Premium Homemade Brownies</title>
+<title>Brownie Box | Premium Brownies</title>
 
 <style>
-/* BASE + WATERMARK BACKGROUND */
+/* BASE */
 body {
     margin: 0;
     font-family: 'Segoe UI', Arial, sans-serif;
-    background-color: #f7f2ec;
-    background-image:
-        linear-gradient(rgba(247,242,236,0.96), rgba(247,242,236,0.96)),
-        url("logo.png");
-    background-repeat: no-repeat;
-    background-position: center 140px;
-    background-size: 420px;
-    background-attachment: fixed;
+    background-color: #f6f1ea;
     color: #3e2723;
 }
 
-/* HEADER */
+/* HEADER – LOGO FOCUS */
 header {
-    background: rgba(255,255,255,0.97);
-    padding: 55px 20px;
+    background: linear-gradient(
+        rgba(246,241,234,0.95),
+        rgba(246,241,234,0.95)
+    ),
+    url("https://images.unsplash.com/photo-1606313564200-e75d5e30476c");
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px 70px;
     text-align: center;
-    border-bottom: 1px solid #e6d8c6;
 }
 
-/* BIG PREMIUM LOGO */
-.logo-large {
-    width: 240px;
-    max-width: 85%;
+/* BIG LUXURY LOGO */
+.logo-main {
+    width: 320px;          /* BIG */
+    max-width: 90%;
     height: auto;
     display: block;
-    margin: 0 auto 18px;
-    filter: drop-shadow(0px 6px 10px rgba(0,0,0,0.25));
+    margin: 0 auto 22px;
+    filter: drop-shadow(0 10px 18px rgba(0,0,0,0.25));
 }
 
 /* TAGLINE */
 .tagline {
-    font-size: 0.95rem;
-    letter-spacing: 2px;
-    color: #7a5c52;
+    font-size: 1rem;
+    letter-spacing: 3px;
+    color: #5d4037;
     margin: 0;
+    font-weight: 500;
 }
 
 /* NAV */
 nav {
-    background: rgba(255,255,255,0.95);
+    background: #ffffff;
     text-align: center;
-    padding: 12px;
-    border-bottom: 1px solid #e6d8c6;
+    padding: 14px;
+    border-bottom: 1px solid #e3d6c8;
 }
 
 nav a {
@@ -68,72 +67,74 @@ nav a:hover {
 
 /* HERO */
 .hero {
-    padding: 80px 20px;
+    padding: 70px 20px;
     text-align: center;
 }
 
 .hero h2 {
-    font-size: 2.2rem;
+    font-size: 2.4rem;
     font-weight: 600;
+    margin-bottom: 10px;
 }
 
 .hero p {
-    color: #5d4037;
+    color: #6d4c41;
+    font-size: 1.05rem;
 }
 
 /* CONTAINER */
 .container {
-    padding: 50px 8%;
-    background: rgba(247,242,236,0.97);
+    padding: 60px 8%;
+    background: #f6f1ea;
 }
 
-/* SECTION TITLES */
+/* SECTION TITLE */
 .section-title {
     font-weight: 600;
-    border-left: 4px solid #c6a96b;
-    padding-left: 12px;
-    margin-top: 60px;
+    border-left: 5px solid #c6a96b;
+    padding-left: 14px;
+    margin-top: 70px;
 }
 
 /* PRODUCTS GRID */
 .products {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 35px;
-    margin-top: 35px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
 }
 
 /* PRODUCT CARD */
 .product {
     background: #ffffff;
-    border-radius: 14px;
+    border-radius: 16px;
     overflow: hidden;
     text-align: center;
     position: relative;
-    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+    box-shadow: 0 14px 35px rgba(0,0,0,0.12);
 }
 
 .product img {
     width: 100%;
-    height: 190px;
+    height: 200px;
     object-fit: cover;
 }
 
-/* PRICE BADGE */
+/* PRICE */
 .price {
     position: absolute;
-    top: 14px;
-    right: 14px;
+    top: 16px;
+    right: 16px;
     background: #c6a96b;
     color: #3e2723;
-    padding: 6px 14px;
-    border-radius: 18px;
+    padding: 7px 16px;
+    border-radius: 20px;
     font-weight: 600;
 }
 
 /* PRODUCT TEXT */
 .product h3 {
-    margin: 18px 0 5px;
+    margin: 20px 0 8px;
     font-weight: 600;
 }
 
@@ -142,9 +143,10 @@ nav a:hover {
     display: block;
     background: #3e2723;
     color: #ffffff;
-    padding: 14px;
+    padding: 15px;
     text-decoration: none;
-    margin-top: 12px;
+    margin-top: 14px;
+    font-weight: 500;
 }
 
 .product a:hover {
@@ -153,26 +155,26 @@ nav a:hover {
 
 /* FOOTER */
 footer {
-    background: rgba(255,255,255,0.97);
+    background: #ffffff;
     text-align: center;
-    padding: 22px;
-    margin-top: 70px;
-    border-top: 1px solid #e6d8c6;
+    padding: 26px;
+    margin-top: 80px;
+    border-top: 1px solid #e3d6c8;
     color: #6d4c41;
 }
 
-/* WHATSAPP FLOAT */
+/* WHATSAPP */
 .whatsapp-float {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 22px;
+    right: 22px;
     background: #25d366;
     color: white;
-    padding: 15px 18px;
+    padding: 16px 20px;
     border-radius: 50px;
     text-decoration: none;
     font-weight: bold;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.3);
 }
 </style>
 </head>
@@ -180,7 +182,7 @@ footer {
 <body>
 
 <header>
-    <img src="logo.png" alt="Brownie Box Logo" class="logo-large">
+    <img src="logo.png" alt="Brownie Box Logo" class="logo-main">
     <p class="tagline">PREMIUM • FRESH • HOMEMADE BROWNIES</p>
 </header>
 
@@ -191,8 +193,8 @@ footer {
 </nav>
 
 <div class="hero">
-    <h2>Indulgence, Perfected</h2>
-    <p>Luxury brownies crafted with care</p>
+    <h2>Luxury Brownies, Perfected</h2>
+    <p>Crafted in small batches with rich ingredients</p>
 </div>
 
 <div class="container">
@@ -258,14 +260,14 @@ footer {
 
 </div>
 
-<p style="margin-top:30px;font-weight:600;">
+<p style="margin-top:35px;font-weight:600;">
 🥚 Eggless option available (+₹80)
 </p>
 
 <h2 id="about" class="section-title">About</h2>
 <p>
-Brownie Box offers premium, handcrafted brownies made in small batches,
-focused on quality ingredients, rich flavours, and a luxury dessert experience.
+Brownie Box is a premium brownie brand offering rich, indulgent desserts made with
+care, quality ingredients, and a love for chocolate.
 </p>
 
 <h2 id="contact" class="section-title">Contact</h2>
