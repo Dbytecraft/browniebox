@@ -6,40 +6,47 @@
 <title>Brownie Box | Premium Homemade Brownies</title>
 
 <style>
+/* RESET */
+* {
+    box-sizing: border-box;
+}
+
+/* BODY */
 body {
     margin: 0;
     font-family: 'Segoe UI', Arial, sans-serif;
-    background-color: #f7f2ec;
+    background: #f7f2ec;
     color: #3e2723;
 }
 
 /* HEADER */
 header {
     background: #ffffff;
-    padding: 50px 20px;
     text-align: center;
+    padding: 60px 20px 40px;
     border-bottom: 1px solid #e6d8c6;
 }
 
-.logo-large {
+/* LOGO */
+.logo {
     width: 260px;
     max-width: 90%;
-    display: block;
     margin: 0 auto 15px;
+    display: block;
+    filter: drop-shadow(0 8px 16px rgba(0,0,0,0.25));
 }
 
 .tagline {
     letter-spacing: 2px;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     color: #7a5c52;
 }
 
 /* NAV */
 nav {
-    background: #ffffff;
+    background: #fff;
     padding: 12px;
     text-align: center;
-    border-bottom: 1px solid #e6d8c6;
 }
 
 nav a {
@@ -57,83 +64,86 @@ nav a {
 
 .hero h2 {
     font-size: 2.2rem;
+    margin-bottom: 10px;
 }
 
 /* CONTAINER */
 .container {
-    padding: 50px 8%;
+    padding: 40px 6%;
 }
 
-/* SECTION */
+/* SECTION TITLE */
 .section-title {
     border-left: 4px solid #c6a96b;
     padding-left: 12px;
-    margin-top: 60px;
+    margin: 60px 0 25px;
+    font-weight: 600;
 }
 
-/* PRODUCTS */
+/* PRODUCTS GRID */
 .products {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
     gap: 30px;
-    margin-top: 30px;
 }
 
+/* PRODUCT CARD */
 .product {
     background: #fff;
     border-radius: 14px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
     overflow: hidden;
     text-align: center;
-    position: relative;
 }
 
+/* IMAGE FIX (NO CROPPING) */
 .product img {
     width: 100%;
-    height: auto;            /* FIXED CROPPING */
-    object-fit: contain;     /* FIXED CROPPING */
+    height: 220px;
+    object-fit: contain;
+    background: #faf7f2;
 }
 
-.price {
-    position: absolute;
-    top: 12px;
-    right: 12px;
-    background: #c6a96b;
-    padding: 6px 12px;
-    border-radius: 16px;
-    font-weight: bold;
-}
-
+/* TEXT */
 .product h3 {
-    margin: 15px 0;
+    margin: 15px 0 5px;
 }
 
+/* PRICE */
+.price {
+    font-weight: 600;
+    color: #6b4f2c;
+}
+
+/* BUTTON */
 .product a {
     display: block;
-    padding: 12px;
     background: #3e2723;
-    color: #fff;
+    color: white;
+    padding: 14px;
     text-decoration: none;
+    margin-top: 10px;
 }
 
 /* FOOTER */
 footer {
+    background: #fff;
+    padding: 25px;
     text-align: center;
-    padding: 20px;
-    border-top: 1px solid #e6d8c6;
     margin-top: 60px;
 }
 
 /* WHATSAPP */
-.whatsapp-float {
+.whatsapp {
     position: fixed;
-    bottom: 20px;
     right: 20px;
+    bottom: 20px;
     background: #25d366;
-    color: white;
-    padding: 14px 18px;
+    color: #fff;
+    padding: 15px 18px;
     border-radius: 50px;
     text-decoration: none;
+    font-weight: bold;
 }
 </style>
 </head>
@@ -141,7 +151,7 @@ footer {
 <body>
 
 <header>
-    <img src="logo.png" class="logo-large">
+    <img src="logo.png" class="logo" alt="Brownie Box Logo">
     <p class="tagline">PREMIUM • FRESH • HOMEMADE BROWNIES</p>
 </header>
 
@@ -163,37 +173,37 @@ footer {
 <div class="products">
 
 <div class="product">
-<span class="price">₹280</span>
 <img src="images/classic.jpg" loading="lazy">
 <h3>Classic Chocolate Brownie</h3>
+<p class="price">₹280</p>
 <a href="https://wa.me/919842701002">Order Now</a>
 </div>
 
 <div class="product">
-<span class="price">₹320</span>
-<img src="images/walnut.jpg" loading="lazy">
-<h3>Walnut Brownie</h3>
+<img src="images/nutty.jpg" loading="lazy">
+<h3>Nutty Brownie</h3>
+<p class="price">₹320</p>
 <a href="https://wa.me/919842701002">Order Now</a>
 </div>
 
 <div class="product">
-<span class="price">₹360</span>
 <img src="images/overload.jpg" loading="lazy">
 <h3>Chocolate Overload</h3>
+<p class="price">₹360</p>
 <a href="https://wa.me/919842701002">Order Now</a>
 </div>
 
 <div class="product">
-<span class="price">₹380</span>
 <img src="images/redvelvet.jpg" loading="lazy">
 <h3>Red Velvet Brownie</h3>
+<p class="price">₹380</p>
 <a href="https://wa.me/919842701002">Order Now</a>
 </div>
 
 <div class="product">
-<span class="price">₹400</span>
 <img src="images/doublechoco.jpg" loading="lazy">
 <h3>Double Chocolate Fudge</h3>
+<p class="price">₹400</p>
 <a href="https://wa.me/919842701002">Order Now</a>
 </div>
 
@@ -204,29 +214,26 @@ footer {
 <div class="products">
 
 <div class="product">
-<span class="price">₹450</span>
 <img src="images/assorted.jpg" loading="lazy">
 <h3>Assorted Brownie Box</h3>
+<p class="price">₹450</p>
 <a href="https://wa.me/919842701002">Order Now</a>
 </div>
 
 <div class="product">
-<span class="price">₹450</span>
 <img src="images/triple.jpg" loading="lazy">
 <h3>Triple Chocolate Brownie</h3>
+<p class="price">₹450</p>
 <a href="https://wa.me/919842701002">Order Now</a>
 </div>
 
 </div>
 
 <h2 id="about" class="section-title">About</h2>
-<p>
-Brownie Box offers premium homemade brownies crafted in small batches with love.
-</p>
+<p>Brownie Box offers handcrafted premium brownies made in small batches in Hosur.</p>
 
 <h2 id="contact" class="section-title">Contact</h2>
 <p><strong>Phone:</strong> 9842701002</p>
-<p><strong>Location:</strong> Hosur, Tamil Nadu</p>
 
 </div>
 
@@ -234,7 +241,7 @@ Brownie Box offers premium homemade brownies crafted in small batches with love.
 © 2025 Brownie Box — Crafted with Care
 </footer>
 
-<a href="https://wa.me/919842701002" class="whatsapp-float">WhatsApp</a>
+<a class="whatsapp" href="https://wa.me/919842701002">WhatsApp</a>
 
 </body>
 </html>
