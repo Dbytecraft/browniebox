@@ -22,13 +22,13 @@ header {
     border-bottom: 1px solid #e6d8c6;
 }
 
-/* LOGO – BIG, MATCHING, PREMIUM */
+/* LOGO */
 .logo {
     width: 260px;
     max-width: 90%;
     display: block;
-    margin: 0 auto 14px;
-    filter: drop-shadow(0 6px 14px rgba(0,0,0,0.28));
+    margin: 0 auto 12px;
+    filter: drop-shadow(0 6px 12px rgba(0,0,0,0.25));
 }
 
 .tagline {
@@ -97,14 +97,12 @@ nav a {
     position: relative;
 }
 
-/* IMAGE – FIT, ZOOMED, NO WHITE BORDER */
+/* IMAGE FIX */
 .product img {
     width: 100%;
     height: 220px;
     object-fit: cover;
-    object-position: center;
     display: block;
-    aspect-ratio: 4 / 3;
 }
 
 /* PRICE */
@@ -139,6 +137,37 @@ nav a {
     background: #5d4037;
 }
 
+/* REVIEWS */
+.reviews {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.review {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.review .stars {
+    color: #c6a96b;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.review p {
+    font-style: italic;
+    margin-bottom: 12px;
+}
+
+.review span {
+    font-weight: 600;
+    color: #5d4037;
+}
+
 /* FOOTER */
 footer {
     margin-top: 60px;
@@ -166,12 +195,13 @@ footer {
 <body>
 
 <header>
-    <img src="logo.png" class="logo" alt="Brownie Box Logo">
+    <img src="logo.png" class="logo" alt="Brownie Box">
     <p class="tagline">PREMIUM • FRESH • HOMEMADE BROWNIES</p>
 </header>
 
 <nav>
     <a href="#menu">Menu</a>
+    <a href="#reviews">Reviews</a>
     <a href="#about">About</a>
     <a href="#contact">Contact</a>
 </nav>
@@ -189,35 +219,35 @@ footer {
 
 <div class="product">
 <span class="price">₹280</span>
-<img src="images/classic.jpg" loading="lazy">
+<img src="images/classic.jpg">
 <h3>Classic Chocolate Brownie</h3>
 <a href="https://wa.me/919842701002">Order Now</a>
 </div>
 
 <div class="product">
 <span class="price">₹320</span>
-<img src="images/nutty.jpg" loading="lazy">
+<img src="images/nutty.jpg">
 <h3>Nutty Brownie</h3>
 <a href="https://wa.me/919842701002">Order Now</a>
 </div>
 
 <div class="product">
 <span class="price">₹360</span>
-<img src="images/overload.jpg" loading="lazy">
+<img src="images/overload.jpg">
 <h3>Chocolate Overload</h3>
 <a href="https://wa.me/919842701002">Order Now</a>
 </div>
 
 <div class="product">
 <span class="price">₹380</span>
-<img src="images/redvelvet.jpg" loading="lazy">
+<img src="images/redvelvet.jpg">
 <h3>Red Velvet Brownie</h3>
 <a href="https://wa.me/919842701002">Order Now</a>
 </div>
 
 <div class="product">
 <span class="price">₹400</span>
-<img src="images/double.jpg" loading="lazy">
+<img src="images/double.jpg">
 <h3>Double Chocolate Fudge</h3>
 <a href="https://wa.me/919842701002">Order Now</a>
 </div>
@@ -230,16 +260,40 @@ footer {
 
 <div class="product">
 <span class="price">₹450</span>
-<img src="images/assorted.jpg" loading="lazy">
+<img src="images/assorted.jpg">
 <h3>Assorted Brownie Box</h3>
 <a href="https://wa.me/919842701002">Order Now</a>
 </div>
 
 <div class="product">
 <span class="price">₹450</span>
-<img src="images/triple.jpg" loading="lazy">
+<img src="images/triple.jpg">
 <h3>Triple Chocolate Brownie</h3>
 <a href="https://wa.me/919842701002">Order Now</a>
+</div>
+
+</div>
+
+<h2 id="reviews" class="section-title">Customer Reviews</h2>
+
+<div class="reviews">
+
+<div class="review">
+<div class="stars">★★★★★</div>
+<p>"The brownies are super fudgy and fresh. Best homemade brownies in Hosur!"</p>
+<span>— Anitha R</span>
+</div>
+
+<div class="review">
+<div class="stars">★★★★★</div>
+<p>"Loved the chocolate overload brownie. Packaging and taste both premium."</p>
+<span>— Karthik S</span>
+</div>
+
+<div class="review">
+<div class="stars">★★★★★</div>
+<p>"Ordered for a family function, everyone asked where it was from!"</p>
+<span>— Priya M</span>
 </div>
 
 </div>
@@ -264,3 +318,4 @@ crafted for rich flavour and indulgence.
 
 </body>
 </html>
+
